@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#eef3f8">
+  <meta name="description" content="Interactive envelope with letter">
+  <title>Interactive Envelope</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <div class="music-controls">
+      <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Turn on background music" title="Toggle background music">
+        <span class="music-icon">♬</span>
+      </button>
+    </div>
+    <div class="music-player" aria-hidden="true">
+    <audio
+        id="music-audio"
+        loop>
+    </audio>
+</div>
+
+    <section class="hero">
+      <div class="envelope-wrapper">
+        <button class="envelope" type="button" aria-expanded="false" aria-label="Open letter">
+          <div class="envelope-body"></div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-seal">
+            <div class="heart"></div>
+          </div>
+        </button>
+        <p class="hint"><font color = "#000000"><strong>Tiêu Dật đã gửi cho bạn một bức thư</strong></font>
+        </p>
+        <p><strong><font color = "#000000">Mở ngay</font></strong></p>
+      </div>
+    </section>
+
+    <div class="letter-overlay" aria-hidden="true">
+      <div class="letter-scene" aria-hidden="true">
+        <div class="side-portrait left-portrait" style="background-image:url(picture/1.jpg)"></div>
+        <div class="letter-card" role="dialog" aria-label="Letter content">
+          <div class="letter-content">
+        <p>Vũ trụ thật tĩnh lặng. Khi thân thể này nổ tung và tan biến thành những hạt bụi lơ lửng trong không gian vô tận, ký ức của tôi lại trôi về lần đầu tiên chúng ta gặp nhau.
+        </p>
+        <p>Từ khi tôi sinh ra, thế giới này vốn đã là một mớ hỗn độn. Bầu trời luôn âm u, mặt đất phủ đầy vết loét, đống đổ nát và cái chết có thể ập đến bất cứ lúc nào. Nhưng giữa đống hoang tàn và tro bụi mịt mù ấy, em đã xuất hiện. Một cô bé mười tuổi rụt rè, tay cầm đóa hoa Diên Vĩ gấp bằng giấy. Em ngước nhìn những hạt bụi lơ lửng trong không trung và gọi đó là "tuyết rơi". Chính sự thuần khiết, ngây thơ của em đã giúp tôi nhận ra rằng, sinh ra trên thế giới này không chỉ để tồn tại, mà còn có những thứ tươi đẹp đáng để ta dùng cả mạng sống bảo vệ. Em giống như ốc đảo xanh mát, mang đến tia hy vọng cho một kẻ đang khát khô trong sa mạc là tôi.
+        </p>
+        <p>Nhưng số phận chẳng hề ưu ái tôi. Để cứu đồng đội trong một vụ nổ lớn, tôi đã mất đi cơ thể con người, và các bác sĩ đã cấy ghép não của tôi vào một thân xác người máy lạnh lẽo. Kim loại thay cho xương cốt, dây điện thay cho mạch máu, không cần ăn, cũng chẳng biết mệt mỏi. Đã có lúc tôi tự hỏi, liệu mình có khác gì những cỗ máy vô hồn, bị tước bỏ thùy não như người đồng đội Bồ Ninh của tôi hay không?. Nhưng mỗi khi nhìn vào đóa hoa Diên Vĩ bằng giấy bạc màu mà em tặng, tôi biết mình vẫn là con người. Bông hoa ấy là mỏ neo giữ lại nhân tính trong tôi, là minh chứng rằng tôi vẫn cảm nhận được cái đẹp của thế giới này.
+        </p>
+        <p>Nhiều năm sau, khi gặp lại em tại Trung tâm Vũ trang, em đã trở thành một nữ sĩ quan kiên cường. Tôi đã không nói ngay cho em biết tôi là cậu bé năm xưa, bởi tôi chỉ muốn âm thầm đứng sau bảo vệ và đồng hành cùng em. Cùng nhau, chúng ta đã lật tẩy sự thật tàn nhẫn của tổ chức HSA. Bọn họ bỏ rơi người già, trẻ em trên mặt đất ô nhiễm, thậm chí thả bom khí độc biến đồng bào của mình thành quái vật. Tàn nhẫn hơn, đối mặt với thảm họa Trái Đất và Mặt Trăng sắp va chạm, giới thượng lưu đã dồn tài nguyên chế tạo con tàu "Babel" để đưa 2.000 kẻ tinh hoa bỏ trốn, bỏ mặc hàng tỷ sinh mạng ở lại chờ chết.
+        </p>
+        <p>Đứng trước sự ích kỷ và hèn nhát đó, tôi không thể lùi bước. Vũ khí của tôi không đủ để phá hủy hệ thống điều khiển trung tâm, cách duy nhất là làm quá tải dữ liệu và kích nổ toàn bộ trạm không gian cùng với chính bản thân mình.
+        </p>
+        <p>Tôi biết, quyết định dứt khoát này sẽ khiến em rất giận và đau lòng. Qua màn hình, nhìn em khóc nức nở lao phi thuyền lên không gian cầu xin tôi dừng lại, tim tôi như thắt lại. Nhưng thời gian của nhân loại không còn nhiều, thảm họa chỉ còn chưa tới 200 ngày nữa. Nếu tôi không phá hủy trạm không gian để chặt đứt đường lùi của những kẻ cầm quyền, họ sẽ không bao giờ chịu tìm cách cứu tất cả mọi người.
+        </p>
+        <p>Tôi không hề sợ hãi cái chết. Nếu sinh mệnh tắt lịm rồi trở về thành những hạt phân tử, tôi tin rằng, vì chúng ta đã từng thu hút lẫn nhau, một ngày nào đó những hạt phân tử ấy sẽ lại tìm đến nhau. Tôi chọn hy sinh không chỉ vì nhân loại, mà vì tôi mong em được sống thật tốt. Tôi luôn tin tưởng rằng, dù không có tôi ở bên, em vẫn sẽ trở thành một nhà lãnh đạo xuất sắc, dẫn dắt thế giới đi qua đêm đen.
+        </p>
+        <p>Tiếc nuối duy nhất của tôi khi rời xa thế giới này, là chưa thể cùng em trải qua một mùa đông thật sự, chưa được cùng em ngắm tuyết tan trong lòng bàn tay. Nếu có kiếp sau, khi Trái Đất trở lại vẻ tươi đẹp vốn có, tôi ước chúng ta có thể định cư ở một nơi yên bình, trồng một cánh đồng hoa Diên Vĩ bạt ngàn. Để khi hoa tàn, chúng ta sẽ ngồi trong ngôi nhà ấm áp ánh lửa, cùng nhau ngắm nhìn bầu trời đầy tuyết rơi....
+        </p>
+        <p class="letter-love">Em có muốn như vậy không?</p>
+        <p class="letter-name">Tiêu Dật.</p>
+        <p class="letter-reply"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeCk95hm0DQ5qoUD2LpK1AmxlUHVQSNw_Ty_Z_EBRK56GRcJA/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer"><strong><em>Bạn có muốn gửi thư lại thư cho Tiêu Dật hay không?</em></strong></a></p>
+          </div>
+        </div>
+        <div class="side-portrait right-portrait" style="background-image:url(picture/2.jpg)"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
